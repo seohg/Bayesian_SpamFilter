@@ -3,8 +3,8 @@ import re
 def loadtrainFile(): 
     global spamMailList, hamMailList
     
-    sf = open('D:/한동대/4학기/이산수학/HW/spamMail.txt', 'r')
-    hf = open('D:/한동대/4학기/이산수학/HW/hamMail.txt', 'r')
+    sf = open('spamMail.txt', 'r')
+    hf = open('hamMail.txt', 'r')
 
     spamMailList =[]
     for sline in sf:
@@ -20,8 +20,8 @@ def loadtrainFile():
 def loadtestFile():
     global testSpamMaliList, testhamMaliList
     
-    tsf = open("D:/한동대/4학기/이산수학/HW/testSpamMail.txt", 'r')
-    thf = open("D:/한동대/4학기/이산수학/HW/testHamMail.txt", 'r')
+    tsf = open("testSpamMail.txt", 'r')
+    thf = open("testHamMail.txt", 'r')
     
     testSpamMaliList =[]
     for tsline in tsf:
